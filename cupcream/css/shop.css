@@ -25,18 +25,21 @@ body {
     height: auto;
     display: flex;
     position: relative;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     z-index: 0;
+    justify-content: space-around;
 }
 
 .card {
     position: relative;
     display: flex;
-    width: 25vw;
-    background-color: var(--color-id);
-    height: auto;
+    width: 25%;
+    filter: blur(10%);
+    height: 100%;
     flex-direction: column;
+    align-self: center;
+    border-radius: 20px 20px 20px 20px;
+    background-color: #4159BC;
 }
 @property --angle{
     syntax: '<angle>';
@@ -87,4 +90,14 @@ h5{
     align-items: center;
     justify-content: center;
     
+}
+
+.card-block{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+    flex-direction: row;
+    border: 2px red solid;
+    margin-bottom: 2%;
 }
