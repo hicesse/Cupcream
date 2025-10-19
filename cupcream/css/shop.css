@@ -1,8 +1,9 @@
-:root {
-    --color-base: #6B402D;
-    --color-base-dark: #5B2C18;
-    --color-id: #4159BC;
-    --def-color: #F8EDE5;
+/* :root {
+} */
+.fontny {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 * {
@@ -30,46 +31,7 @@ body {
     justify-content: space-around;
 }
 
-.card {
-    position: relative;
-    display: flex;
-    width: 25%;
-    filter: blur(10%);
-    height: 100%;
-    flex-direction: column;
-    align-self: center;
-    border-radius: 20px 20px 20px 20px;
-    background-color: #4159BC;
-}
-@property --angle{
-    syntax: '<angle>';
-    initial-value: 0deg;
-    inherits: false;
-}
 
-.card:hover::after, .card:hover::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    padding: 4px;
-    height: 100%;
-    z-index: -1;
-    left: 50%;
-    top: 50%;
-    translate:-50% -50%;
-    background-image: conic-gradient(from var(--angle), transparent 80%, red, yellow, blue);
-    animation: spin 3s infinite linear;
-    will-change: transform;
-}
-
-.card::before{
-    filter: blur(1.2rem);
-}
-
-@keyframes spin {
-       from { --angle: 0deg; }
-       to { --angle: 360deg; }
-   }
 
 .gambar-kontener {
     width: 100%;
