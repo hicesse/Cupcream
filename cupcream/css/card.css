@@ -3,51 +3,38 @@
     --color-mint: #EBF9FF;
     --color-yellow: #F7E593;
     --color-red: #FFA292;
-    --def-color: #F7F2EA;
+    --color-pink: #FDF1F7;
+    --cream-color: #F7F2EA;
+
+    --red-primary: #FF5757;
+    --pink-primary: #FEEBF3;
+    --light-primary: #AFE7FF;
+    --yellow-primary: #F9FF51;
+    --blue--primary: #55C6FF;
+    --cream-primary: #ECE2D2;
+
+    --primary-pink: #ffd1e9;
+    --yell:#fcff57;
     
+
+
 }
 
-.card {
-    position: relative;
-    display: flex;
-    width: 25%;
-    filter: blur(10%);
-    height: 100%;
-    flex-direction: column;
-    align-self: center;
-    border-radius: 20px 20px 20px 20px;
-    background-color: #4159BC;
-}
-@property --angle{
+@property --angle {
     syntax: '<angle>';
     initial-value: 0deg;
     inherits: false;
 }
 
-.card:hover::after, .card:hover::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    padding: 4px;
-    height: 100%;
-    z-index: -1;
-    left: 50%;
-    top: 50%;
-    translate:-50% -50%;
-    background-image: conic-gradient(from var(--angle), transparent 80%, red, yellow, blue);
-    animation: spin 3s infinite linear;
-    will-change: transform;
-    border-radius: 20px;
-}
-
-.card::before{
-    filter: blur(1.2rem);
-}
-
 @keyframes spin {
-       from { --angle: 0deg; }
-       to { --angle: 360deg; }
-   }
+    from {
+        --angle: 0deg;
+    }
+
+    to {
+        --angle: 360deg;
+    }
+}
 
 
 /* Blue Card */
@@ -62,9 +49,12 @@
     align-self: center;
     border-radius: 20px 20px 20px 20px;
     background-color: var(--color-blue);
+    /* box-shadow: 0 12px 30px rgba(0,0,0,5vw); */
+    /* border: var(--yellow-primary) 3px solid; */
 }
 
-.card-blue:hover::after, .card-blue:hover::before {
+.card-blue:hover::after,
+.card-blue:hover::before {
     position: absolute;
     content: "";
     width: 100%;
@@ -73,14 +63,50 @@
     z-index: -1;
     left: 50%;
     top: 50%;
-    translate:-50% -50%;
+    translate: -50% -50%;
     background-image: conic-gradient(from var(--angle), transparent 80%, var(--color-blue));
     animation: spin 3s infinite linear;
     will-change: transform;
     border-radius: 20px;
 }
 
-.card-blue::before{
+.card-blue::before {
+    filter: blur(1.2rem);
+}
+
+/* Card Light blue */
+
+
+.card-blue-light {
+    position: relative;
+    display: flex;
+    width: 25%;
+    filter: blur(10%);
+    height: 100%;
+    flex-direction: column;
+    align-self: center;
+    border-radius: 20px 20px 20px 20px;
+    /* background-color: var(--blue--primary); */
+}
+
+.card-blue-light:hover::after,
+.card-blue-light:hover::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    padding: 4px;
+    height: 100%;
+    z-index: -1;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    background-image: conic-gradient(from var(--angle), transparent 80%, var(--blue--primary));
+    animation: spin 3s infinite linear;
+    will-change: transform;
+    border-radius: 20px;
+}
+
+.card-blue-light::before {
     filter: blur(1.2rem);
 }
 
@@ -97,9 +123,12 @@
     align-self: center;
     border-radius: 20px 20px 20px 20px;
     background-color: var(--color-yellow);
+    border: var(--yellow-primary) 3px solid;
+    box-shadow: 5px 5px 3px #edf342;
 }
 
-.card-yellow:hover::after, .card-yellow:hover::before {
+.card-yellow:hover::after,
+.card-yellow:hover::before {
     position: absolute;
     content: "";
     width: 100%;
@@ -108,14 +137,15 @@
     z-index: -1;
     left: 50%;
     top: 50%;
-    translate:-50% -50%;
+    translate: -50% -50%;
     background-image: conic-gradient(from var(--angle), transparent 80%, var(--color-yellow));
     animation: spin 3s infinite linear;
     will-change: transform;
     border-radius: 20px;
+
 }
 
-.card-yellow::before{
+.card-yellow::before {
     filter: blur(1.2rem);
 }
 
@@ -132,9 +162,12 @@
     align-self: center;
     border-radius: 20px 20px 20px 20px;
     background-color: var(--color-blue);
+    box-shadow: 7px 7px 5px var(--blue--primary);
+    border: var(--color-pink) 3px solid;
 }
 
-.card-mint:hover::after, .card-mint:hover::before {
+.card-mint:hover::after,
+.card-mint:hover::before {
     position: absolute;
     content: "";
     width: 100%;
@@ -143,13 +176,137 @@
     z-index: -1;
     left: 50%;
     top: 50%;
-    translate:-50% -50%;
+    translate: -50% -50%;
     background-image: conic-gradient(from var(--angle), transparent 80%, var(--color-blue));
     animation: spin 3s infinite linear;
     will-change: transform;
     border-radius: 20px;
 }
 
-.card-mint::before{
+.card-mint::before {
     filter: blur(1.2rem);
+}
+
+/* card red */
+
+.card-red {
+    position: relative;
+    display: flex;
+    width: 25%;
+    filter: blur(10%);
+    height: 100%;
+    flex-direction: column;
+    align-self: center;
+    border-radius: 20px 20px 20px 20px;
+    background-color: var(--color-red);
+    box-shadow: 4.5px 5px 5px #e24a4a;
+    
+    border: #db897b 3px solid;
+}
+
+.card-red:hover::after,
+.card-red:hover::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    padding: 4px;
+    height: 100%;
+    z-index: -1;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    background-image: conic-gradient(from var(--angle), transparent 80%, var(--color-red));
+    animation: spin 3s infinite linear;
+    will-change: transform;
+    border-radius: 20px;
+}
+
+.card-red::before {
+    filter: blur(1.2rem);
+}
+
+/* card pink */
+
+.card-pink {
+    position: relative;
+    display: flex;
+    width: 25%;
+    filter: blur(10%);
+    height: 100%;
+    flex-direction: column;
+    align-self: center;
+    border-radius: 20px 20px 20px 20px;
+    background-color: var(--color-pink);
+    
+    box-shadow: 6.5px 6.5px 5px var(--color-red);
+    border: var(--primary-pink) 3px solid;
+}
+
+.card-pink:hover::after,
+.card-pink:hover::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    padding: 4px;
+    height: 100%;
+    z-index: -1;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    background-image: conic-gradient(from var(--angle), transparent 80%, var(--color-pink));
+    animation: spin 3s infinite linear;
+    will-change: transform;
+    border-radius: 20px;
+}
+
+.card-pink::before {
+    filter: blur(1.2rem);
+}
+
+
+/* card cream */
+
+
+.card-cream {
+    
+    position: relative;
+    display: flex;
+    width: 25%;
+    filter: blur(10%);
+    height: 100%;
+    flex-direction: column;
+    align-self: center;
+    border-radius: 20px 20px 20px 20px;
+    background-color: var(--cream-color);
+    border: var(--primary-pink) 3px solid;
+    box-shadow: 5px 6.5px 5px var(--color-red);
+}
+    
+
+
+.card-cream:hover::after,
+.card-cream:hover::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    padding: 4px;
+    height: 100%;
+    z-index: -1;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    background-image: conic-gradient(from var(--angle), transparent 80%, var(--cream-color));
+    animation: spin 3s infinite linear;
+    will-change: transform;
+    border-radius: 20px;
+}
+
+.card-cream::before {
+    filter: blur(1.2rem);
+}
+
+
+li {
+    font-family: "Lucida Console", "Courier New", monospace;
+    margin-bottom: 2vh;
 }

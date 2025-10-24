@@ -8,10 +8,11 @@ pad
 } */
 /* mobile sisanya */
 :root {
-    --color-base: #FFD9EB;
+    --color-base: #55C6FF;
     --color-base-dark: #5B2C18;
     --color-id: #4159BC;
-    --def-color: #e85d77;
+    --def-color: #EBF9FF;
+    --apa:#55C6FF;
 }
 
 *,*::after,*::before{
@@ -34,6 +35,7 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    text-decoration: underline #4c6ae2;
 }
 
 .container {
@@ -54,7 +56,7 @@ body {
     width: 100%;
     flex-direction: row;
     background-color: var(--color-base);
-   
+    
     padding: 0 40px 0 0;
     color: var(--def-color);
     text-decoration: none;
@@ -82,4 +84,8 @@ width: 50%;
     object-fit: cover;
     width: 100%;
     height: auto;
+}
+
+
+#nav-png img{ filter: brightness(0) saturate(100%) invert(1);
 }
