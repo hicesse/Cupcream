@@ -8,10 +8,11 @@ pad
 } */
 /* mobile sisanya */
 :root {
-    --color-base: #6B402D;
+    --color-base: #55C6FF;
     --color-base-dark: #5B2C18;
     --color-id: #4159BC;
-    --def-color: #F8EDE5;
+    --def-color: #EBF9FF;
+    --apa:#55C6FF;
 }
 
 *,*::after,*::before{
@@ -31,14 +32,17 @@ body {
     height: 100%;
     display: flex;
     width: auto;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    text-decoration: underline #4c6ae2;
 }
 
 .container {
+    
+    
     display: flex;
-    width: 100%;
+    width: calc(50%-200px);
     height: 100vh;
     background-color: var(--color-base);
 }
@@ -52,7 +56,8 @@ body {
     width: 100%;
     flex-direction: row;
     background-color: var(--color-base);
-    padding: 0 20px;
+    
+    padding: 0 40px 0 0;
     color: var(--def-color);
     text-decoration: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -60,59 +65,27 @@ body {
 }
 
 
-.nav-text:hover {
-    background-color: var(--color-base-dark);
+/* #nav a:hover {
+    background-color: #fff;
     transition: 0.3799s;
-}
-
-
-/* #box {
-    display: none;
-}
-
-#menu,
-#close {
-    display: none;
-    filter: brightness(0) saturate(100%) invert(97%) sepia(12%) saturate(348%) hue-rotate(314deg) brightness(99%) contrast(95%);
-
 } */
 
-
-/* @media (max-width: 900px) {
+#nav-con{
+width: 50%;
+}
+#nav-png{
+    width: 35%;
+    height: auto;
+    margin: 0 10% 0 5%;
     
+}
 
-    .container {
-        flex-direction: column;
-        align-items: flex-start;
-        position: fixed;
-        top: 0;
-        right: -100%;
-        z-index: 10;
-        width: 52vw;
-        box-shadow: -3px 0 5px var(--color-base-dark);
-        transition: 0.75s ease-out;
-    }
-
-    #nav a {
-        box-sizing: border-box;
-        height: auto;
-        justify-content: flex-start;
-        width: 100%;
-        padding: 20px;
-    }
+#nav-png img{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
 
 
-    #close,
-    #menu {
-        margin: 1rem 1rem 0.5rem 1rem;
-        fill: var(--color-id);
-        display: block;
-    }
-
-
-    #box:checked~.container {
-        right: 0;
-        transition: 0.6s ease-out;
-
-    }
-} */
+#nav-png img{ filter: brightness(0) saturate(100%) invert(1);
+}
