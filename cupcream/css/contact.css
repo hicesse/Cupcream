@@ -1,0 +1,50 @@
+
+
+h1 {
+    text-align: center;
+    margin: 50px;
+}
+
+.hyperlink{
+    text-align: center;
+}
+.contact {
+    text-align: center;
+    margin-bottom: auto;
+}
+.page-center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+    }
+
+.form1{
+        display: flex;
+        gap: 2rem;               /* space between column & opinion */
+        padding: 2rem 2.5rem;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,.08);
+    }
+
+
+.opinion{
+        width: 100%;             /* fill its flex container */
+    }
+
+.right-opinion{
+        display: flex;
+        flex: 1;                 /* stretch to fill leftover space */
+        min-width: 220px;
+    }
+
+.left-column{
+        display: flex;
+        flex-direction: column;
+        gap: .9rem;              /* space between stacked inputs */
+    }
+
+button:hover{
+    background-color: aqua;
+}
