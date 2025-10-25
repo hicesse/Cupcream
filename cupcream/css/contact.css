@@ -21,7 +21,7 @@ h1 {
 
 .form1{
         display: flex;
-        gap: 2rem;               /* space between column & opinion */
+        gap: 2rem;               
         padding: 2rem 2.5rem;
         border: 1px solid #ddd;
         border-radius: 8px;
@@ -30,21 +30,33 @@ h1 {
 
 
 .opinion{
-        width: 100%;             /* fill its flex container */
+        width: 100%;             
     }
 
 .right-opinion{
         display: flex;
-        flex: 1;                 /* stretch to fill leftover space */
+        flex: 1;                 
         min-width: 220px;
     }
 
 .left-column{
         display: flex;
         flex-direction: column;
-        gap: .9rem;              /* space between stacked inputs */
+        gap: .9rem;              
     }
 
-button:hover{
-    background-color: aqua;
-}
+.page-right{
+        display: flex;
+        justify-content: center;
+        flex-direction: center;
+        align-items: flex-end;
+        margin-left: 100px;
+        margin-top: 50px;
+    }
+
+.center-bottom{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .9rem;
+    }

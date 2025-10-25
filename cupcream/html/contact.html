@@ -1,6 +1,6 @@
 <head>
     <title>Contact Us</title>
-    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/cupcream/css/contact.css">
 </head>
 <body>
 <h1 class="header">Contact</h1>
@@ -9,17 +9,21 @@
 <a href="https://www.instagram.com">Instagram</a>
 <a href="https://youtube.com">Youtube</a>
 </div>
-
 <div class="page-center">
 <form class="form1">
-    
+
     <div class="left-column">
                 <input type="text"   name="fname" placeholder="Name">
                 <input type="number" name="ftelp" placeholder="Phone">
                 <input type="text"   name="email" placeholder="Email">
+                <label for="sub1">Subscribe to our newsletter?</label>
+                <div><input type="radio" name="Subscribe" id="sub1" value="yes">
+                <label for="sub1">Yes</label></div>
+                <div><input type="radio" name="Subscribe" id="sub2" value="no">
+                <label for="sub2">No</label></div>
             </div>
 
-            <!-- opinion on their right -->
+    
             <div class="right-opinion">
                 <input class="opinion"
                        type="text"
@@ -28,6 +32,21 @@
             </div>
     <input type="button" value="Submit" size="20">
 </form>
+</div>
+<h1>REGISTER</h1>
+<div class="page-right">
+    <div class="center-bottom">
+    <input type="text" name="name" id="rname" placeholder="Username">
+    <input type="password" name="password" id="pwd" placeholder="Password">
+    <input type="email"  name="email" id="remail" placeholder="Email">
+        <div>
+            <input type="checkbox" name="terms" id="terms" required>
+            <label for="terms">I agree to the terms and conditions</label><br>
+            <input type="checkbox" name="follow" id="terms" required>
+            <label for="follow">have you followed our social media?</label>
+        </div>
+    <input type="button" value="Register" size="20" required>
+    </div>
 </div>
 
 </body>
