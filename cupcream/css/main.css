@@ -13,7 +13,7 @@
     --primary-pink: #FEEBF3;
     --primary-cream: #ECE2D2;
 
-    
+
 }
 
 
@@ -22,7 +22,7 @@
 *::after {
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 
 body {
@@ -30,7 +30,7 @@ body {
 }
 
 #header {
-    width: 100vw;
+    width: 100%;
     height: 80vh;
     overflow: hidden;
     background-color: var(--color-blue);
@@ -81,34 +81,35 @@ span {
     font-family: "Nunito", "Baloo 2", sans-serif;
     align-items: center;
 
-    text-shadow: 
-    -1px -1px 0 #419ac7,
-    1px -1px 0 #419ac7,
-    -1px 1px 0 #419ac7,
-    1px 1px 0 #419ac7;
+    text-shadow:
+        -1px -1px 0 #419ac7,
+        1px -1px 0 #419ac7,
+        -1px 1px 0 #419ac7,
+        1px 1px 0 #419ac7;
 
 
 }
 
-#header-container{
+#header-container {
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: auto;
-    
+
 
 }
-#header-img-container{
+
+#header-img-container {
     height: 100%;
     width: 40vw;
 }
 
-main{
+main {
     width: 100%;
     height: 80vh;
     border: green 2px solid;
 
-    
+
 }
 
 
@@ -116,37 +117,37 @@ main{
 
 
 /* Footer */
-a{
+a {
     text-decoration: none;
 }
-footer{
-    height: 40vh;
-    width: 100%;
-    border: #FF5757 2px solid;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    
 
+
+#foot-container {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    border: #97DCFF 2px solid;
+    width: 100%;
+    height: 20%;
+    border-radius: 20px 20px 0 0;
 }
 
-#foot-container{
+#foot-img-container {
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 13%;
     height: auto;
-    margin: 10%;
-    border: #55C6FF 2px solid;
+    justify-content: space-around;
+    border: #EBF9FF 2px solid;
+
 }
 
-.sosmed-container{
-    width: 40%;
+.sosmed-container {
+    width: 100%;
     height: 100%;
-
-
 }
 
-.sosmed-container img{
+.foot-img {
     object-fit: cover;
     width: 100%;
     height: 100%;

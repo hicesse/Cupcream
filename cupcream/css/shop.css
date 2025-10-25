@@ -123,3 +123,10 @@ h5 {
     margin-bottom: 2%;
     
 }
+
+
+#form{
+    display: flex;
+    height: auto;
+    width: 100%;
+}
