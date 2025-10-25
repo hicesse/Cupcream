@@ -1,3 +1,21 @@
+:root {
+    --color-blue: #97DCFF;
+    --color-light: #EBF9FF;
+    --color-yellow: #F7E593;
+    --color-red: #FFA292;
+    --color-pink: #FDF1F7;
+    --color-cream: #F7F2EA;
+
+    --primary-blue: #55C6FF;
+    --primary-light: #AFE7FF;
+    --primary-yellow: #F9FF51;
+    --primary-red: #FF5757;
+    --primary-pink: #FEEBF3;
+    --primary-cream: #ECE2D2;
+
+    
+}
+
 
 body {
     font-family: "Poppins", Arial, sans-serif;
@@ -7,36 +25,9 @@ body {
     padding: 0;
 }
 
-/* Header */
 
 
-header h1 {
-    margin: 0;
-    font-size: 2em;
-    letter-spacing: 1px;
-}
-
-/* Navigation */
-nav {
-    margin-top: 10px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-nav a:hover,
-nav a.active {
-    color: #ffe066;
-    text-decoration: underline;
-}
-
-/* Main Section */
-main {
+ main {
     max-width: 900px;
     margin: 50px auto;
     background-color: white;
@@ -45,7 +36,6 @@ main {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* About Section */
 .about h2 {
     color: #55C6FF;
     font-size: 1.8em;
@@ -72,45 +62,28 @@ main {
     border-radius: 8px;
 }
 
-/* Footer */
+
+/* 
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: var(--color-light);
+}
+    */
 footer {
-    background-color: #FFD9EB;
-    color: white;
+    background-color: var(--color-yellow);
+    color: #883a3a;
     text-align: center;
     padding: 15px 0;
     margin-top: 40px;
     font-size: 0.9em;
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-    main {
-        padding: 20px;
-    }
-
-    nav a {
-        display: block;
-        margin: 10px 0;
-    }
-}
-/* Footer */
-footer {
-    background-color: #FFD9EB;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    margin-top: 40px;
-    font-size: 0.9em;
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-    main {
-        padding: 20px;
-    }
-
-    nav a {
-        display: block;
-        margin: 10px 0;
-    }
-}
+    width: 100%;
+    height: 20vh;
+} 
