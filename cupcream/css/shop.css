@@ -124,5 +124,9 @@ h5 {
     
 }
 
-.shadow{
+
+#form{
+    display: flex;
+    height: auto;
+    width: 100%;
 }
