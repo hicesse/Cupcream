@@ -1,1 +1,121 @@
-D
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Sederhana</title>
+    <link rel="stylesheet" href="css/galery.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: rgb(23, 2, 2);
+            margin-bottom: 40px;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background: white;
+            aspect-ratio: 1;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .gallery {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 15px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gallery</h1>
+            <p class="subtitle">Koleksi Foto Pilihan</p>
+        </header>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="/assets/forgalery/krim1.JPG" alt="Foto 1">
+            </div>
+
+            <div class="gallery-item">
+                <img src="/assets/forgalery/krim2.JPG" alt="Foto 2">
+            </div>
+
+            <div class="gallery-item">
+                <img src="/assets/forgalery/krim3.JPG" alt="Foto 3">
+            </div>
+
+            <div class="gallery-item">
+                <img src="/assets/forgalery/krim4.JPG" alt="Foto 4">
+            </div>
+
+            <div class="gallery-item">
+                <img src="/assets/forgalery/krim5.JPG" alt="Foto 5">
+            </div>
+
+            <div class="gallery-item">
+                <img src="/assets/forgalery/krim6.JPG" alt="Foto 6">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
