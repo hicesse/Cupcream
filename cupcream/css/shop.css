@@ -1,8 +1,28 @@
+/* :root {
+} */
+
 :root {
-    --color-base: #6B402D;
-    --color-base-dark: #5B2C18;
-    --color-id: #4159BC;
-    --def-color: #F8EDE5;
+    --color-blue: #97DCFF;
+    --color-mint: #EBF9FF;
+    --color-yellow: #F7E593;
+    --color-red: #FFA292;
+    --color-pink: #FDF1F7;
+    --cream-color: #F7F2EA;
+
+    --red-primary: #FF5757;
+    --pink-primary: #FEEBF3;
+    --light-primary: #AFE7FF;
+    --yellow-primary: #F9FF51;
+    --blue--primary: #55C6FF;
+    --cream-primary: #ECE2D2;
+
+
+}
+
+.fontny {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 * {
@@ -16,12 +36,51 @@ body {
     background-color: var(--def-color);
 }
 
+.bulat-besar-container {
+    width: 1000px;
+    height: 1000px;
+    overflow: hidden;
+    position: absolute;
+    border-radius: 100%;
+    top: -140%;
+    justify-self: center;
+
+}
+
+.bulat-besar {
+    /* background-image: linear-gradient(from var(--angle), transparent 80%, var(--color-yellow), red); */
+    background: linear-gradient(to right, #1BD3F3, #F5BAD6);
+
+    width: 100%;
+    height: 100%;
+}
+
+.bulat-kecil-container {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: absolute;
+    border-radius: 100%;
+    justify-self: center;
+    right: 0;
+    bottom: -50%;
+    rotate: 180deg;
+    z-index: -1;
+
+}
+
+.bulat-kecil {
+    /* background-image: linear-gradient(from var(--angle), transparent 80%, var(--color-yellow), red); */
+    background: linear-gradient(to right, #1BD3F3, #F5BAD6);
+    width: 100%;
+    height: 100%;
+}
+
 
 
 .card-container {
     margin: 5vh 12.5vw 5vh 12.5vw;
     width: 75vw;
-    background-color: var(--color-base-dark);
     height: auto;
     display: flex;
     position: relative;
@@ -30,74 +89,40 @@ body {
     justify-content: space-around;
 }
 
-.card {
-    position: relative;
-    display: flex;
-    width: 25%;
-    filter: blur(10%);
-    height: 100%;
-    flex-direction: column;
-    align-self: center;
-    border-radius: 20px 20px 20px 20px;
-    background-color: #4159BC;
-}
-@property --angle{
-    syntax: '<angle>';
-    initial-value: 0deg;
-    inherits: false;
-}
 
-.card:hover::after, .card:hover::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    padding: 4px;
-    height: 100%;
-    z-index: -1;
-    left: 50%;
-    top: 50%;
-    translate:-50% -50%;
-    background-image: conic-gradient(from var(--angle), transparent 80%, red, yellow, blue);
-    animation: spin 3s infinite linear;
-    will-change: transform;
-}
-
-.card::before{
-    filter: blur(1.2rem);
-}
-
-@keyframes spin {
-       from { --angle: 0deg; }
-       to { --angle: 360deg; }
-   }
 
 .gambar-kontener {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    /* background-color: #1BD3F3; */
 }
 
 .gambar {
     object-fit: cover;
     width: 100%;
     height: 100%;
+    /* background-color: var(--yellow-primary); */
 
 }
 
-h5{
+h5 {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
-.card-block{
+.card-block {
     display: flex;
     width: 100%;
     height: auto;
     justify-content: space-around;
     flex-direction: row;
-    border: 2px red solid;
     margin-bottom: 2%;
+    
+}
+
+.shadow{
 }
