@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+
+}
+
+footer {
+    background-color: var(--color-yellow);
+    color: #883a3a;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    font-size: 0.9em;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 40vh;
+    border-radius: 20px 20px 0 0;
+}
+
+
+
+
+.sosmed-container{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+
+
+}
+
+
+#top-foot {
+    object-fit: cover;
+    width: 100%;
+    height: 12,5%;
+    display: flex;
+    flex-direction:row-reverse;
+    margin: 2% 0 1% 0;
+
+}
+#top-foot a{
+    margin-right: 2%;
+}
+
+#main-foot {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+thead {
+    font-weight: bold;
+}
+
+td {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    white-space: nowrap;
+}
+
+#tr-one {
+    text-align: center;
+}
+
+td a {
+    padding: 0 50px;
+    text-decoration: none;
+    color: #883a3a;
+}
+
+table,
+td {
+    width: 80%;
+    height: auto;
+    border: #883a3a 2px transparent;
+}
+
+/* main foot ended */
+
+/* #bottom-foot p{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */

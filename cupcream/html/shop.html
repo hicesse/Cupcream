@@ -4,13 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/shop.css">
     <link rel="stylesheet" href="/css/card.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/shop.css">
     <link rel="shortcut icon" href="" type="image/x-icon">
-    <title>Document</title>
+    <title>Shop</title>
+
+    <style>
+        * {
+
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 </head>
 
 <body id="body">
@@ -71,7 +77,7 @@
 
 
             <div class="card-mint">
-                <div class="gambar-kontener"> <img src="/assets/mintcone.png" class="gambar" ></div>
+                <div class="gambar-kontener"> <img src="/assets/mintcone.png" class="gambar"></div>
                 <h5>
                     <ul>
                         <li>MintCone</li>
@@ -84,7 +90,7 @@
         <div class="card-block">
             <div class="card-yellow">
                 <div class="gambar-kontener"> <img src="/assets/vanillacone.png" class="gambar"> </div>
-               <h5>
+                <h5>
                     <ul>
                         <li>Vanilla</li>
                     </ul>
@@ -97,6 +103,96 @@
     <div class="bulat-kecil-container">
         <div class="bulat-kecil kanan-bawah"></div>
     </div>
+<!-- Atas Udah Toko -->
+
+    <div id="form">
+        <form>
+            <select>
+
+                <label for="dessert">Choose a dessert:</label>
+                <option value="" selected disabled>-- Select your order here --</option>
+
+                <optgroup label="Ice Cream">
+                    <option value="matcha">Matcha</option>
+                    <option value="chocolate">Chocolate</option>
+                    <option value="vanilla">Vanilla</option>
+                    <option value="strawberry">Strawberry</option>
+                    <option value="Tiramitsu">Tiramitsu</option>
+
+                    <option value="taro">Taro</option>
+                </optgroup>
+                <optgroup label="Cake">
+                    <option value="cheesecake">Cheesecake</option>
+                    <option value="chocolate-cake">Chocolate Cake</option>
+                    <option value="red-velvet">Red Velvet</option>
+                </optgroup>
+                <optgroup label="Cookies" disabled>
+                    <option value="chocolate-chip">Chocolate Chip</option>
+                    <option value="oatmeal">Oatmeal</option>
+                </optgroup>
+            </select>
+
+            <button type="submit"
+                style="width: auto; height: auto; padding: 0 20px;  border:#76b6d6 2px solid; background-color: #ffffff;">Order
+                Now!!</button>
+        </form>
+    </div>
+
+
+
+
+    <footer>
+        <div id="top-foot">
+            <a href="https://www.facebook.com/share/1CbbX7Qko8/">
+                <div class="sosmed-container"><img src="/assets/facebook.svg" class="foot-img"><img></div>
+            </a>
+            <a href="#">
+                <div class="sosmed-container"><img src="/assets/github.svg" class="foot-img"><img></div>
+            </a>
+            <a href="#">
+                <div class="sosmed-container"><img src="/assets/instagram.svg" class="foot-img"><img></div>
+            </a>
+        </div>
+        <div id="main-foot">
+            <table>
+                <thead>
+                    <tr>
+                        <td>Cupcream</td>
+                        <td>Product</td>
+                        <td>Usefull Link</td>
+                        <td>Contact Us</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="tr-one">
+                        <td rowspan="3">
+                            A cozy little spot built for laughter, stories, and sweet memories.<br>Our ice cream isn't
+                            just
+                            dessert, it's the reason
+                            <br>kids never want to go home, and adults wish they didn't have to.
+                        </td>
+                        <td>Ice Cream</td>
+                        <td><a href="/html/shop.html" class="link-foot">Shop</a></td>
+                        <td>Cikarang, Bekasi</td>
+                    </tr>
+                    <tr>
+                        <td>Cake</td>
+                        <td><a href="/html/about.html" class="link-foot">About Us</a></td>
+                        <td>Cupcream@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Desert</td>
+                        <td><a href="/html/contact.html" class="link-foot">Contact Us</a></td>
+                        <td>+62 309 3108</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="buttom-foot">
+            <p>&copy; 2025 CupCream | All Rights Reserved</p>
+        </div>
+
+    </footer>
     <script src=""></script>
 
 </body>

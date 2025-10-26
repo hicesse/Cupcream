@@ -19,18 +19,7 @@
 
 }
 
-.fontny {
-    font-family: "Archivo Black", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
 
-* {
-    margin: 0;
-    padding: 0;
-
-
-}
 
 body {
     background-color: var(--def-color);
@@ -121,8 +110,33 @@ h5 {
     justify-content: space-around;
     flex-direction: row;
     margin-bottom: 2%;
-    
+
 }
 
-.shadow{
+form{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+#form {
+    display: flex;
+    height: 20vh;
+    width: 50%;
+    margin-top: 2%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: #d3f0ff;
+    box-shadow: 2px 2px 2px #76b6d6;
+    margin: 0 25%;
+    border-radius: 20px;
+
+
+}
+select{
+    border:#76b6d6 2px solid;
+}
+
+li {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
