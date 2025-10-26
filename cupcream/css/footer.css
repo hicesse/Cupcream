@@ -1,3 +1,20 @@
+:root {
+    --color-blue: #97DCFF;
+    --color-light: #EBF9FF;
+    --color-yellow: #F7E593;
+    --color-red: #FFA292;
+    --color-pink: #FDF1F7;
+    --color-cream: #F7F2EA;
+
+    --primary-blue: #55C6FF;
+    --primary-light: #AFE7FF;
+    --primary-yellow: #F9FF51;
+    --primary-red: #FF5757;
+    --primary-pink: #FEEBF3;
+    --primary-cream: #ECE2D2;
+
+
+}
 *,
 *::before,
 *::after {
