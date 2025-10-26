@@ -39,6 +39,7 @@ body {
 }
 
 .bulat-besar-container {
+
     width: 300px;
     height: 300px;
     overflow: hidden;
@@ -121,34 +122,3 @@ a {
     text-decoration: none;
 }
 
-
-#foot-container {
-    flex-direction: row;
-    display: flex;
-    justify-content: space-between;
-    border: #97DCFF 2px solid;
-    width: 100%;
-    height: 20%;
-    border-radius: 20px 20px 0 0;
-}
-
-#foot-img-container {
-    display: flex;
-    flex-direction: row;
-    width: 13%;
-    height: auto;
-    justify-content: space-around;
-    border: #EBF9FF 2px solid;
-
-}
-
-.sosmed-container {
-    width: 100%;
-    height: 100%;
-}
-
-.foot-img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
