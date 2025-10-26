@@ -1,22 +1,20 @@
-
 :root {
     --color-blue: #97DCFF;
-    --color-mint: #EBF9FF;
+    --color-light: #EBF9FF;
     --color-yellow: #F7E593;
     --color-red: #FFA292;
     --color-pink: #FDF1F7;
-    --cream-color: #F7F2EA;
+    --color-cream: #F7F2EA;
 
-    --red-primary: #FF5757;
-    --pink-primary: #FEEBF3;
-    --light-primary: #AFE7FF;
-    --yellow-primary: #F9FF51;
-    --blue--primary: #55C6FF;
-    --cream-primary: #ECE2D2;
+    --primary-blue: #55C6FF;
+    --primary-light: #AFE7FF;
+    --primary-yellow: #F9FF51;
+    --primary-red: #FF5757;
+    --primary-pink: #FEEBF3;
+    --primary-cream: #ECE2D2;
 
 
 }
-
 *,
 *::before,
 *::after {
