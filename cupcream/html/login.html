@@ -7,13 +7,15 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 style="font-size: 50px; color: #55c6ff;">REGISTER</h1>
 <div class="page-right">
-    <div class="register">
+    <div class="register" style=" display: flex; align-items: center; font-size: larger;">
+        <div id="reg-con">
+        <label for="text"><strong>Register</strong></label></div>
         <div class="center-bottom">
         <input type="text" name="name" id="rname" placeholder="Username">
         <input type="password" name="password" id="pwd" placeholder="Password">
         <input type="email"  name="email" id="remail" placeholder="Email">
+        <a href="/html/forgot.html" target="main" style="font-size: smaller;">forgot password</a>
             <div>
                 <input type="checkbox" name="terms" id="terms" required>
                 <label for="terms">I agree to the <a href="https://docs.google.com/document/d/1vfWDhYeXkI8uahzCWJaBu21U6yUuye-6/edit?usp=sharing&ouid=112512321509221893227&rtpof=true&sd=true" target="_blank">terms and conditions</a></label><br>
@@ -21,8 +23,8 @@
                 <label for="follow">I Agree to help devs fight for their rights</label>
             </div>
         <input type="button" value="Register" size="20" id="reg">
-        </div>
-    </div>
+       
+    </div></div>
 </div>
 </body>
 </html>

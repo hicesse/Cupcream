@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+            const $pass1 = $("#password1");
+            const $pass2 = $("#password2");
+            const $confirm = $("#confirm");
+            const $guide = $("#passwordGuide");
+            const $submit = $("#submitBtn");
+
+            function hasNumber(text) {
+                return /[0-9]/.test(text); // remgex
+            }
+            function checkPassword() {
+                const p1 = $pass1.val();
+                const p2 = $pass2.val();
+                $submit.prop("disabled", true);
+
+                if (p1 === "" || p2 === "") {
+                    $confirm.css("background-color", "red");
+                    $guide.text("Password belum lengkap.");
+                    return;
+                }
+                if (p1 !== p2) {
+                    $confirm.css("background-color", "red");
+                    $guide.text("Password tidak sama.");
+                    return;
+                }
+                if (!hasNumber(p1)) {
+                    $confirm.css("background-color", "orange");
+                    $guide.text("Password lemah. Tambahkan minimal 1 angka.");
+                    return;
+                }
+                $confirm.css("background-color", "green");
+                $guide.text("Password cocok dan cukup kuat.");
+                $submit.prop("disabled", false);
+            }
+            $pass1.on("input", checkPassword);
+            $pass2.on("input", checkPassword);
+
+        });
+    </script>
+
+
+
+</head>
+
+<body>
+    <div class="container text-center overflow-hidden">
+        <div class="row d-flex justify-content-center align-items-center" style=" height: 100vh;">
+            <div class="row row-cols-2 align-items-center justify-content-evenly overflow-hidden d-flex">
+                <div class="col-5 py-3" style="border: 2px solid rgba(116, 116, 138, 0.192);">
+                    <label for="password1" class="form-label"><b>Create new password</b></label>
+                    <input type="password" class="form-control" id="password1" autofocus
+                        placeholder="insert new password">
+                </div>
+                <div class="col-5 py-3" style="border: rgba(116, 116, 138, 0.192) 1px solid;">
+                    <label for="password2" class="form-label"><b>Confirm password</b></label>
+                    <input type="password" class="form-control" id="password2" placeholder="confirm password">
+                </div>
+                <div class="col-1 align-self-end" id="confirm"
+                    style="width: 20px; height: 20px; background-color: red;">
+                </div>
+                <div class="col-12 mt-3 text-start">
+                    <small id="passwordGuide" class="text-muted">
+                        Password minimal mengandung 1 angka.
+                    </small>
+                </div>
+
+                <div class="col-12 mt-3">
+                    <button id="submitBtn" class="btn btn-primary" disabled type="submit">
+                        Submit Password
+                    </button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+<!-- enak banget yh pake jquery sama bootstrep trnyata heheheee -->
+</html>

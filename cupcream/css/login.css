@@ -17,6 +17,7 @@
 
 .register{
         display: flex;
+        flex-direction: column;
         gap: 2rem;               
         padding: 2rem 2.5rem;
         border: 1px solid #ddd;
