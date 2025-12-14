@@ -103,41 +103,46 @@
     <div class="bulat-kecil-container">
         <div class="bulat-kecil kanan-bawah"></div>
     </div>
-<!-- Atas Udah Toko -->
+    <!-- Atas Udah Toko -->
 
-    <div id="form">
+    <div id="form" class="order-section">
         <form>
-            <select>
+            <label for="dessert">Choose a dessert:</label>
+            <select id="dessert">
 
-                <label for="dessert">Choose a dessert:</label>
                 <option value="" selected disabled>-- Select your order here --</option>
-
                 <optgroup label="Ice Cream">
-                    <option value="matcha">Matcha</option>
-                    <option value="chocolate">Chocolate</option>
-                    <option value="vanilla">Vanilla</option>
-                    <option value="strawberry">Strawberry</option>
-                    <option value="Tiramitsu">Tiramitsu</option>
-
-                    <option value="taro">Taro</option>
+                    <option id="matcha" value="Matcha">Matcha</option>
+                    <option id="chocolate" value="Chocolate">Chocolate</option>
+                    <option id="vanilla" value="Vanilla">Vanilla</option>
+                    <option id="strawberry" value="Strawberry">Strawberry</option>
+                    <option id="Tiramitsu" value="Tiramitsu">Tiramitsu</option>
+                    <option id="Taro" value="Taro">Taro</option>
                 </optgroup>
                 <optgroup label="Cake">
-                    <option value="cheesecake">Cheesecake</option>
-                    <option value="chocolate-cake">Chocolate Cake</option>
-                    <option value="red-velvet">Red Velvet</option>
+                    <option value="Cheesecake" id="cheesecake">Cheesecake</option>
+                    <option value="Chocolate-cake" id="chocolate-cake">Chocolate Cake</option>
+                    <option value="Red velvet" id="red-velvet">Red Velvet</option>
                 </optgroup>
                 <optgroup label="Cookies" disabled>
-                    <option value="chocolate-chip">Chocolate Chip</option>
-                    <option value="oatmeal">Oatmeal</option>
+                    <option value="Chocolate chip" id="chocolate-chip">Chocolate Chip</option>
+                    <option value="Oatmeal" id="oatmeal">Oatmeal</option>
                 </optgroup>
             </select>
 
-            <button type="submit"
-                style="width: auto; height: auto; padding: 0 20px;  border:#76b6d6 2px solid; background-color: #ffffff;">Order
-                Now!!</button>
+            <button type="button" id="add"
+                style="width: auto; height: auto; padding: 0 20px;  border:#76b6d6 2px solid; background-color: #ffffff;" onclick="klik()">Add
+                items</button>
+            <button type="button" id="pesanbut" onclick="pesan()"> Pesan sekarang</button>
         </form>
     </div>
+    <div id="order-container">
+        <div id="order" class="order-section">
+            <ol id="pilihan" type="1">
 
+            </ol>
+        </div>
+    </div>
 
 
 
@@ -193,7 +198,8 @@
         </div>
 
     </footer>
-    <script src=""></script>
+    <script src="/js/jq.js"></script>
+    <script src="/js/shop.js"></script>
 
 </body>
 

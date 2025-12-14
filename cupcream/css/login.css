@@ -1,0 +1,27 @@
+
+.page-right{
+        display: flex;
+        justify-content: center;
+        flex-direction: center;
+        align-items: flex-start;
+        margin-left: 0px;
+        margin-top: 50px;
+    }
+
+.center-bottom{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .9rem;
+    }
+
+.register{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;               
+        padding: 2rem 2.5rem;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,.08);
+    }
+

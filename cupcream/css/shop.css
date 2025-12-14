@@ -113,18 +113,19 @@ h5 {
 
 }
 
-form{
+form {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
 }
+
 #form {
     display: flex;
     height: 20vh;
     width: 50%;
     margin-top: 2%;
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
     background-color: #d3f0ff;
     box-shadow: 2px 2px 2px #76b6d6;
@@ -132,11 +133,39 @@ form{
     border-radius: 20px;
 
 
-}
-select{
-    border:#76b6d6 2px solid;
+} 
+
+select {
+    border: #76b6d6 2px solid;
 }
 
 li {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#order-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+ 
+#order {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #d3f0ff;
+    box-shadow: 2px 2px 2px #76b6d6;
+    margin: 0 25%;
+    border-radius: 20px;
+    margin: 5% 0 0 0;
+}
+
+.margin{
+    margin: 2%;
 }
